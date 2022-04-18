@@ -1,0 +1,11 @@
+#score{
+    display: flex;
+    width: 400px;
+    align-items: center;
+    justify-content: center;
+    font-size: 50px;
+    color: rgb(128, 6, 177);
+    background-image: url('./OIP.jpg');
+   
+}
+
