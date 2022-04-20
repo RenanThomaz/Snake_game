@@ -2,7 +2,9 @@
 
 
         
-window.onload = function(){
+////////////////////////////////window.onload =
+
+function jogo (x){
 
     var mainDiv = document.getElementById('main')   
     var canvas = document.createElement('canvas')
@@ -28,9 +30,9 @@ window.onload = function(){
     
     var started = false;
     var spawnAple = false;
-    var speedsnake = 100;
+    var speedsnake = x;
     var test = 0;
-
+    
    
     document.addEventListener("keydown",keypush);
     
@@ -69,18 +71,19 @@ window.onload = function(){
         py += vy;
 
         //caso chege no final do tabuleiro o que fazer
-        if(px < 0) {
-            px = qp-1;
+       if(px < 0) {
+          px = qp-1;
+      }
+       if(px > qp -1) {
+           px = 0;
         }
-        if(px > qp -1) {
-            px = 0;
-        }
-        if(py < 0){
-            py = qp - 1;
-        }
-        if(py > qp - 1){
-            py = 0;
-        }
+      if(py < 0){
+           py = qp - 1;
+      }
+       if(py > qp - 1){
+           py = 0;
+     }
+
 
         //pintando o canvas
         ctx.fillStyle = "black";
